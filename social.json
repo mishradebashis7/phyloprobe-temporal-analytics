@@ -1,0 +1,25 @@
+{
+  "id": "social",
+  "method": "Contact Trees (Khulusi et al., 2016)",
+  "context": "Tracks relationship decay. Standard diagrams fail at showing how friendships change over years. These trees allow sociologists to see interaction 'heartbeats' directly on the family/work branches.",
+  "metrics": { "a": "Interaction", "b": "Emotion", "c": "Shared Time", "unit": "pts" },
+  "tree": {
+    "label": "Community Root", "id": "CR",
+    "children": [
+      {
+        "label": "Family Circle", "id": "FC",
+        "children": [
+          {"label": "Siblings", "id": "SIB", "children": []},
+          {"label": "Parents", "id": "PAR", "children": []}
+        ]
+      },
+      {
+        "label": "Work Circle", "id": "WC",
+        "children": [
+          {"label": "Manager", "id": "MGR", "children": []},
+          {"label": "Engineers", "id": "ENG", "children": []}
+        ]
+      }
+    ]
+  }
+}

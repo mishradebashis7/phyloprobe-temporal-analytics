@@ -1,0 +1,19 @@
+{
+  "id": "software",
+  "method": "SparkTrees (Burch et al., 2011)",
+  "context": "Visualizes software evolution. It maps file directories to Sparklines, allowing managers to see which specific code modules had the most bugs or commits during a release cycle.",
+  "metrics": { "a": "Commits", "b": "Complexity", "c": "Bug Density", "unit": "qty" },
+  "tree": {
+    "label": "Main Repository", "id": "REPO",
+    "children": [
+      { "label": "Source Code", "id": "SRC", "children": [
+        {"label": "Controllers", "id": "CTRL", "children": []},
+        {"label": "Models", "id": "MOD", "children": []}
+      ]},
+      { "label": "Library", "id": "LIB", "children": [
+        {"label": "Utility", "id": "UTIL", "children": []},
+        {"label": "Core Logic", "id": "CORE", "children": []}
+      ]}
+    ]
+  }
+}

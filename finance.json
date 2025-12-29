@@ -1,0 +1,19 @@
+{
+  "id": "finance",
+  "method": "TreeVersity (Gomez et al., 2012)",
+  "context": "Analyzes the U.S. Federal Budget. By embedding fiscal 'Bullet Charts' into the agency hierarchy, auditors can spot anomalies in massive datasets that spreadsheets would hide.",
+  "metrics": { "a": "Spending", "b": "Risk Factor", "c": "Variance", "unit": "USD" },
+  "tree": {
+    "label": "Federal Budget", "id": "FED",
+    "children": [
+      { "label": "Dept of Defense", "id": "DOD", "children": [
+        {"label": "Air Force", "id": "AF", "children": []},
+        {"label": "Army", "id": "ARM", "children": []}
+      ]},
+      { "label": "Health Services", "id": "HHS", "children": [
+        {"label": "Medicare", "id": "MCR", "children": []},
+        {"label": "Medicaid", "id": "MCD", "children": []}
+      ]}
+    ]
+  }
+}
